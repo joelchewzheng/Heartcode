@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOU'VE BEEN HACKED</title>
+    <style>
+        body {
+            font-family: 'chiller', monospace;font-size: 60px;
+            background-color: #000;
+            color: #ff0000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #typed-text {
+            font-size: 1.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 1px solid #ff0000;
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: #ff0000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="typed-text"></div>
+
+<script>
+    const words = ["Typed in personal details again?"];
+    let index = 0;
+    let letterIndex = 0;
+    const speed = 100; // typing speed in milliseconds
+
+    function typeWords() {
+        const typedTextElement = document.getElementById("typed-text");
+        if (index < words.length) {
+            if (letterIndex < words[index].length) {
+                typedTextElement.innerHTML += words[index].charAt(letterIndex);
+                letterIndex++;
+                setTimeout(typeWords, speed);
+            } else {
+                // Word typed completely, move to the next word
+                index++;
+                letterIndex = 0;
+                setTimeout(typeWords, speed * 2); // pause before typing the next word
+            }
+        } else {
+            // All words typed, restart the loop
+            setTimeout(() => {
+                typedTextElement.innerHTML = "";
+                index = 0;
+                letterIndex = 0;
+                typeWords();
+            }, speed * 4); // pause before restarting
+        }
+    }
+
+    typeWords();
+</script>
+
+</body>
+</html>
