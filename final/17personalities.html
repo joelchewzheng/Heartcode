@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Personalities</title>
+    <style>
+        body {            
+            background-color: rgb(255, 255, 191);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            border:solid aqua;
+            background-color: pink;
+            color: rgb(0, 0, 0);
+            text-align:center
+        }
+        h2 {
+            background-color: pink;
+            color: rgb(255, 255, 255);
+            text-align:center
+        }
+        p {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>2 Personalities</h1>
+    <h2>Want to find out more about yourself? Answer a few questions to find out!</h2>
+    <hr>
+    <form action="" method="">
+        <p>
+        What is your name? <br>
+            <input type="text" name="name">
+            <br><br>
+        How old are you?<br> nb                                               
+            <input type="number" name="age">
+            <br><br>
+        What is your gender? <br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </p>
+            <hr>
+        <h3>Let's begin the personality test! 😊</h3>
+        <p>1. You regularly make new friends <br>
+            <input type="radio" id="true1" name="qn1" value="true1">
+            <label for="true1">Agree</label>
+            <input type="radio" id="false1" name="qn1" value="false1">
+            <label for="false1">Disagree</label>
+            <br><br>
+        2. You often make a backup plan for a backup plan. <br>
+            <input type="radio" id="true2" name="qn2" value="true2">
+            <label for="true2">Agree</label>
+            <input type="radio" id="false2" name="qn2" value="false2">
+            <label for="false2">Disagree</label>
+            <br><br>
+        3. Seeing other people cry can easily make you feel like you want to cry too. <br>
+            <input type="radio" id="true3" name="qn3" value="true3">
+            <label for="true3">Agree</label>
+            <input type="radio" id="false3" name="qn3" value="false3">
+            <label for="false3">Disagree</label>
+            <br><br>
+        4. Share an embarassing moment about yourself <br>
+            <textarea name="message" rows="4" cols="36"></textarea>
+            <br><br>
+        5. Upload a selfie! <br>
+        <p action="/action_page.php">
+            <input type="file" id="myFile" name="filename"> <input type="submit">
+        </p>
+        </form>
+        <hr>
+    </form>
+    <button type="button">Calculate Your Score</button>
+</body>
+</html>

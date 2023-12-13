@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Website</title>
+    <style>
+        body {
+            background-color: pink;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+
+        .center {
+            text-align: center;
+        }
+
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+
+        label {
+            color: purple;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h1 class="center">16 Personality test</h1>
+    <h3 class="center">Register for an account</h3>
+    <hr>
+    <form action="#" method="post">
+
+
+        <!-- Question 1 -->
+        <label for="full_name">1. What is your full name?</label>
+        <div>
+            <input type="text" id="full_name" name="full_name" required>
+        </div>
+
+
+        <!-- Question 2 -->
+        <label for="birthdate">2. When is your date of birth?</label>
+        <div>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+
+
+        <!-- Question 3 -->
+        <label for="gender">3. What is your gender?</label>
+        <div>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <!-- Question 4 -->
+        <label for="email">4. What is your email address?</label>
+        <div>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+
+        <!-- Question 5 -->
+        <label for="phone_number">5. What is your phone number?</label>
+        <div>
+            <input type="tel" id="phone_number" name="phone_number" required>
+        </div>
+
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+
+</body>
