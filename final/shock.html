@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scary Typewriter Effect</title>
+<style>
+    body {
+    background-color: black;
+    color: red;
+    font-family: 'Chiller', cursive;
+    font-size: 80px;
+    text-align: center;
+    margin: 100px;
+    }
+
+    #typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align:center;
+    border-right: 1px solid red;
+    
+    padding: 10px;
+    position : fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    #cursor {
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+    }
+    
+</style>
+</head>
+<body>
+
+<div id="typewriter-text"></div>
+<span id="cursor">&#9646;</span>
+
+<script>
+const words = ['YOUR DATA HAS BEEN LEAKED'];
+const cursor = document.getElementById('cursor');
+const typewriterText = document.getElementById('typewriter-text');
+
+function typeWriter(text, i, callback) {
+    if (i < text.length) {
+    typewriterText.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(function() { typeWriter(text, i, callback); }, 170);
+    } else {
+    setTimeout(callback, 200);
+    }
+}
+
+function displayWords(words, index) {
+    if (index < words.length) {
+    typewriterText.innerHTML = '';
+    cursor.style.display = 'none'; // Show the cursor
+    typeWriter(words[index], 0, function() {
+        cursor.style.display = 'none'; // Hide the cursor when typing is done
+        displayWords(words, index + 1);
+    });
+    setTimeout(function() {
+            // Redirect to another page after 5 seconds
+            window.location.href = 'dark.html';
+        }, 7000)
+    }
+}
+
+displayWords(words, 0);
+</script>
+
+</body>
+</html>

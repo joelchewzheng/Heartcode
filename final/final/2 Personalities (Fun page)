@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Personalities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                }
+            to {
+                opacity: 1;
+                }
+            }
+
+        body {
+            background-image: url(gradient.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+        }
+
+        .jumbotron {
+        background-image: url(istockphoto-1317318630-170667a.jpg);
+        background-size: cover;
+        height: 800px;
+        display:flex;
+        align-items: center;
+        margin-bottom: 2em;
+        animation: fadeIn 2s ease-in-out;
+        }
+        
+        .questions {
+            padding-top: 20px ;
+        }
+
+        .image {
+            background-image: url(pastel.jpg);
+            background-size: contain;
+            height: 250px;
+        }
+
+        input[type="file"] {
+            display: none; 
+        }
+
+        .container1{
+            background-image: url(watercolor.avif);
+            background-size: cover;
+            height: 110px; 
+        }
+
+        button {
+            background-color: #d2f0f9; 
+            color: #000000; 
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+        }
+
+        button:hover {
+            background-color: #9de0f8;
+        }
+
+        .site-footer {
+        background-color:#f8dffa93;
+        padding:50px 0 40px;
+        font-size:15px;
+        line-height:24px;
+        color:#000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="jumbotron" class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-1 mt-2 fw-bold ">2 Personalities</h1>
+            <p class="display-5 text-light fw-bold">Want to learn more about yourself? Answer some questions to find out!</p>
+            <a class="nav-link display-5" href="#questions">Click here to start!</a>
+        </div>
+    </div>
+    
+    <div id="questions" class="questions">
+        <div class="container hstack gap-3">
+            <div class="image w-50 shadow p-4 bg-light rounded " style="--bs-bg-opacity: .5;">
+                <h1 class="display-2 mt-2 fw-bold">Introduce Yourself</h1>
+            </div>
+            
+            <div class="q2 w-50 bg-white shadow p-3 bg-light rounded" style="--bs-bg-opacity: .5;">
+                <p class="fw-bold">
+                    What is your name? <br>
+                    <input class="form-control input-sm" id="inputsm" type="text" name="name">
+                    </p>
+                <p class="fw-bold">
+                    How old are you? <br>
+                    <input class="form-control input-sm" id="inputsm" type="text" name="age">
+                    </p>
+                <p class="fw-bold">
+                    What is your gender? <br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="fw-normal" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="fw-normal" for="female">Female</label>
+                </p>
+            </div>
+    </div>
+
+    <div class="container">
+        <div class="container1 w-100 shadow p-3 mt-5 mb-3 rounded" style="--bs-bg-opacity: .9;">
+            <h1 class="display-4 text-center fw-bold">Start the personality test below</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="w-100 bg-white shadow p-3 mb-3 rounded" style="background-color: #ff0000; --bs-bg-opacity: .5; ">
+            <p class="fw-bold">
+            1. You regularly make new friends <br>
+            <input type="radio" id="true1" name="qn1" value="true1">
+            <label class="fw-normal" for="true1">Agree</label> 
+            <input type="radio" id="false1" name="qn1" value="false1">
+            <label class="fw-normal" for="false1">Disagree</label>
+            <br><br>
+            2. You often make a backup plan for a backup plan. <br>
+            <input type="radio" id="true2" name="qn2" value="true2">
+            <label class="fw-normal" for="true2">Agree</label>
+            <input type="radio" id="false2" name="qn2" value="false2">
+            <label class="fw-normal" for="false2">Disagree</label>
+            <br><br>
+            3. Seeing other people cry can easily make you feel like you want to cry too. <br>
+            <input type="radio" id="true3" name="qn3" value="true3">
+            <label class="fw-normal" for="true3">Agree</label>
+            <input type="radio" id="false3" name="qn3" value="false3">
+            <label class="fw-normal" for="false3">Disagree</label>
+            <br><br>
+            4. Share an embarrassing moment about yourself <br>
+            <textarea name="message" class="w-100"></textarea>
+            <br><br>
+            5. Upload a selfie <br>
+            <label for="myFile" class="w-100 " style="cursor: pointer; background-color: #ffffffd2; color: rgb(0, 0, 0); padding: 10px 15px; border-radius: 5px; display: inline-block;">Choose File</label>
+            <input type="file" id="myFile" name="filename">
+            </p>
+            <button class="container" type="button">Calculate your results!</button>
+        </div>
+    </div>
+    <br><br>
+        <footer class="site-footer">
+        <div class="container">
+                <p class="copyright-text">Heartcode 2023 │ Made by Chew Zheng & Zhe Rui  </p>
+                <p>Special thanks to our mentors: </p>
+            </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
