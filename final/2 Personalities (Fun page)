@@ -10,12 +10,8 @@
 
     <style>
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                }
-            to {
-                opacity: 1;
-                }
+            from {opacity: 0;}
+            to {opacity: 1;}
             }
 
         body {
@@ -26,13 +22,13 @@
         }
 
         .jumbotron {
-        background-image: url(istockphoto-1317318630-170667a.jpg);
-        background-size: cover;
-        height: 800px;
-        display:flex;
-        align-items: center;
-        margin-bottom: 2em;
-        animation: fadeIn 2s ease-in-out;
+            background-image: url(istockphoto-1317318630-170667a.jpg);
+            background-size: cover;
+            height: 800px;
+            display:flex;
+            align-items: center;
+            margin-bottom: 2em;
+            animation: fadeIn 2s ease-in-out;
         }
         
         .questions {
@@ -41,8 +37,9 @@
 
         .image {
             background-image: url(pastel.jpg);
-            background-size: contain;
-            height: 250px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
         }
 
         input[type="file"] {
@@ -63,12 +60,12 @@
         .container1{
             background-image: url(watercolor.avif);
             background-size: cover;
-            height: 110px; 
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
         }
 
         button {
-            background-color: #d2f0f9; 
-            color: #000000; 
+            color: #ffffff; 
             padding: 10px 15px;
             border: none;
             border-radius: 5px;
@@ -88,6 +85,10 @@
         line-height:24px;
         color:#000000;
         }
+
+        input[type='radio'] {
+        accent-color: #000000;
+        }
     </style>
 </head>
 
@@ -103,7 +104,7 @@
     
     <div id="questions" class="questions">
         <div class="container hstack gap-3">
-            <div class="image w-50 shadow p-4 bg-light rounded" style="--bs-bg-opacity: .5;">
+            <div class="image w-50 shadow p-4 bg-light rounded" style="--bs-bg-opacity: .5; height: 280px;">
                 <h1 class="display-2 mt-3 fw-bold">Introduce Yourself</h1>
             </div>
             
@@ -153,11 +154,11 @@
             <h4 class="fw-bold">2. You often make a backup plan for a backup plan.</h4>
             <div class="text-center">
                 <span style="padding:5px">Strongly Disagree</span> 
-                <input class="option align-bottom" type="radio" id="stronglydisagree1" name="qn1" value="stronglydisagree1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree1" name="qn1" value="disagree1">
-                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral1" name="qn1" value="neutral1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="agree1" name="qn1" value="agree1">
-                <input class="option align-bottom" type="radio" id="stronglyagree1" name="qn1" value="stronglyagree1">
+                <input class="option align-bottom" type="radio" id="stronglydisagree2" name="qn2" value="stronglydisagree2">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree2" name="qn2" value="disagree2">
+                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral2" name="qn2" value="neutral2">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="agree2" name="qn2" value="agree2">
+                <input class="option align-bottom" type="radio" id="stronglyagree2" name="qn2" value="stronglyagree2">
                 <span style="padding:5px">Strongly Agree</span> 
             </div>
             <br><br>
@@ -165,11 +166,11 @@
             <h4 class="fw-bold">3. Seeing other people cry can easily make you feel like you want to cry too.</h4>
             <div class="text-center">
                 <span style="padding:5px">Strongly Disagree</span> 
-                <input class="option align-bottom" type="radio" id="stronglydisagree1" name="qn1" value="stronglydisagree1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree1" name="qn1" value="disagree1">
-                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral1" name="qn1" value="neutral1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="agree1" name="qn1" value="agree1">
-                <input class="option align-bottom" type="radio" id="stronglyagree1" name="qn1" value="stronglyagree1">
+                <input class="option align-bottom" type="radio" id="stronglydisagree3" name="qn3" value="stronglydisagree3">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree3" name="qn3" value="disagree3">
+                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral3" name="qn3" value="neutral3">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="agree3" name="qn3" value="agree3">
+                <input class="option align-bottom" type="radio" id="stronglyagree3" name="qn3" value="stronglyagree3">
                 <span style="padding:5px">Strongly Agree</span> 
             </div>
             <br><br>
@@ -177,11 +178,11 @@
             <h4 class="fw-bold">4. You usually stay calm even under alot of pressure. </h4>
             <div class="text-center">
                 <span style="padding:5px">Strongly Disagree</span> 
-                <input class="option align-bottom" type="radio" id="stronglydisagree1" name="qn1" value="stronglydisagree1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree1" name="qn1" value="disagree1">
-                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral1" name="qn1" value="neutral1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="agree1" name="qn1" value="agree1">
-                <input class="option align-bottom" type="radio" id="stronglyagree1" name="qn1" value="stronglyagree1">
+                <input class="option align-bottom" type="radio" id="stronglydisagree4" name="qn4" value="stronglydisagree4">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree4" name="qn4" value="disagree4">
+                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral4" name="qn4" value="neutral4">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="agree4" name="qn4" value="agree4">
+                <input class="option align-bottom" type="radio" id="stronglyagree4" name="qn4" value="stronglyagree4">
                 <span style="padding:5px">Strongly Agree</span> 
             </div>
             <br><br>
@@ -189,11 +190,11 @@
             <h4 class="fw-bold">5. You are very sentimental. </h4>
             <div class="text-center">
                 <span style="padding:5px">Strongly Disagree</span> 
-                <input class="option align-bottom" type="radio" id="stronglydisagree1" name="qn1" value="stronglydisagree1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree1" name="qn1" value="disagree1">
-                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral1" name="qn1" value="neutral1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="agree1" name="qn1" value="agree1">
-                <input class="option align-bottom" type="radio" id="stronglyagree1" name="qn1" value="stronglyagree1">
+                <input class="option align-bottom" type="radio" id="stronglydisagree5" name="qn5" value="stronglydisagree5">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree5" name="qn5" value="disagree5">
+                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral5" name="qn5" value="neutral5">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="agree5" name="qn5" value="agree5">
+                <input class="option align-bottom" type="radio" id="stronglyagree5" name="qn5" value="stronglyagree5">
                 <span style="padding:5px">Strongly Agree</span> 
             </div>
             <br><br>
@@ -201,11 +202,11 @@
             <h4 class="fw-bold">6. Even a small mistake can cause you to doubt your overall abilities and knowledge. </h4>
             <div class="text-center">
                 <span style="padding:5px">Strongly Disagree</span> 
-                <input class="option align-bottom" type="radio" id="stronglydisagree1" name="qn1" value="stronglydisagree1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree1" name="qn1" value="disagree1">
-                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral1" name="qn1" value="neutral1">
-                <input class="option align-bottom" style="width: 25px" type="radio" id="agree1" name="qn1" value="agree1">
-                <input class="option align-bottom" type="radio" id="stronglyagree1" name="qn1" value="stronglyagree1">
+                <input class="option align-bottom" type="radio" id="stronglydisagree6" name="qn6" value="stronglydisagree6">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="disagree6" name="qn6" value="disagree6">
+                <input class="option align-bottom" style="width: 20px" type="radio" id="neutral6" name="qn6" value="neutral6">
+                <input class="option align-bottom" style="width: 25px" type="radio" id="agree6" name="qn6" value="agree6">
+                <input class="option align-bottom" type="radio" id="stronglyagree6" name="qn6" value="stronglyagree6">
                 <span style="padding:5px">Strongly Agree</span> 
             </div>
             <br><br>
@@ -219,7 +220,7 @@
             <input type="file" id="myFile" name="filename">
             </span>
             <br><br>
-            <button class="container" type="button" data-bs-toggle="modal" data-bs-target="#modal">Calculate your results!</button>
+            <button class="container fw-bold lead" type="button" style="background-image: url(gradientbutton.jpg); background-size: cover;" data-bs-toggle="modal" data-bs-target="#modal">Calculate your results!</button>
         </div>
     </div>
 
