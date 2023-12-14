@@ -105,7 +105,7 @@
     <div id="questions" class="questions">
         <div class="container hstack gap-3">
             <div class="image w-50 shadow p-4 bg-light rounded" style="--bs-bg-opacity: .5; height: 280px;">
-                <h1 class="display-2 mt-3 fw-bold">Introduce Yourself</h1>
+                <h1 class="display-2 fw-bold">Introduce Yourself</h1>
             </div>
             
             <div class="q2 w-50 bg-white shadow p-3 bg-light rounded" style="--bs-bg-opacity: .5;">
@@ -220,18 +220,18 @@
             <input type="file" id="myFile" name="filename">
             </span>
             <br><br>
-            <button class="container fw-bold lead" type="button" style="background-image: url(gradientbutton.jpg); background-size: cover;" data-bs-toggle="modal" data-bs-target="#modal">Calculate your results!</button>
+            <button class="container fw-bold lead" type="button" style="background-image: url(gradientbutton.jpg); background-size: cover; " data-bs-toggle="modal" data-bs-target="#modal">Calculate your results!</button>
         </div>
     </div>
 
     <div class="modal" tabindex="-1" id="modal">
         <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">One more thing...</h4>
+            <div class="modal-content" style="background-image: url(gradient.jpg); background-size:cover">
+            <div class="modal-header" >
+                <h4 class="modal-title fw-bold" style="color:#000000; ">One more thing...</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" >
                 <div class="q2 bg-white shadow p-3 bg-light rounded" style="--bs-bg-opacity: .5;">
                     <p class="fw-bold">
                         Email Address: <br>
@@ -248,9 +248,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-secondary fw-bold" data-bs-dismiss="modal">Close</button>
                 <a href="shock.html">
-                    <button type="button" class="btn btn-primary" >Submit</button>
+                    <button type="button" class="btn btn-outline-light fw-bold" style="background-image: url(gradientbutton.jpg); background-size:cover;">Submit</button>
                 </a>
             </div>
             </div>
@@ -261,7 +261,7 @@
         <footer class="site-footer">
         <div class="container">
                 <p class="copyright-text">Heartcode 2023 │ Made by Chew Zheng & Zhe Rui  </p>
-                <p>Special thanks to the trainers and organisers of Heartcode and the guests that took time off their busy schedule to come see our pitch :) </p>
+                <p>Special thanks to the trainers and organisers of Heartcode & The guests that took time off their busy schedule to come see our pitch :) </p>
             </div>
         </footer>
 
