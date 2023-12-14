@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creepy Hacking Awareness</title>
+    <style>
+        body {
+            font-family: 'Gothic', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .card {
+            position: relative;
+            width: 100%;
+            height: auto;
+            perspective: 1000px;
+        }
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: auto;
+            transform-style: preserve-3d;
+            transition: transform 0.5s;
+        }
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+        .front {
+            z-index: 2;
+        }
+        .back {
+            transform: rotateY(180deg);
+            background-color: #222;
+            padding: 20px;
+            border: 1px solid #666;
+            color: #fff;
+        }
+        h2 {
+            border-bottom: 1px solid #666;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #3a3a3a;
+            color: #fff;
+            border: 1px solid #666;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #222;
+            color: #ff4500;
+        }
+        .info {
+            display: none;
+        }
+        .back .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creepy Hacking Awareness</h1>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <h2>Show Hacking Stats</h2>
+                    <button>Show Stats</button>
+                </div>
+                <div class="back">
+                    <h2>Show Hacking Stats</h2>
+                    <div class="info">Statistics on hacking incidents can be presented here.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <h2>Show Impacts of Being Hacked</h2>
+                    <button>Show Impacts</button>
+                </div>
+                <div class="back">
+                    <h2>Show Impacts of Being Hacked</h2>
+                    <div class="info">Discuss emotional and tangible impacts of being hacked, including financial losses, emotional distress, and other effects.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <h2>Show Protection Tips</h2>
+                    <button>Show Tips</button>
+                </div>
+                <div class="back">
+                    <h2>Show Protection Tips</h2>
+                    <div class="info">Provide protection tips such as using strong, unique passwords, enabling two-factor authentication, keeping software updated, being cautious of phishing attempts, and regularly backing up important data.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
