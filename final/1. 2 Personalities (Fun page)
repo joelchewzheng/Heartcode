@@ -249,7 +249,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary fw-bold" data-bs-dismiss="modal">Close</button>
-                <a href="shock.html">
+                <a href="2. Reveal.html">
                     <button type="button" class="btn btn-outline-light fw-bold" style="background-image: url(gradientbutton.jpg); background-size:cover;">Submit</button>
                 </a>
             </div>
