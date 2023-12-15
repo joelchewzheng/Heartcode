@@ -16,6 +16,7 @@
             max-width: 500px;
             padding: 10px;
             margin: auto;
+            background-image: url(red-gradient.jpg);
         }
 
         h1 {
@@ -40,6 +41,7 @@
             width: 100%;
             padding-top: 50px;
             height:fit-content
+            
     }   
 
         .card-inner {
@@ -47,6 +49,7 @@
             width: 100%;
             transform-style: preserve-3d;
             transition: 0.5s;
+            background-image: url(code.webp);
         }
 
         .flipped .card-inner {
@@ -68,7 +71,7 @@
         .back {
             transform: rotateY(180deg);
             margin-left: -42px;
-            height:fit-content
+            height:fit-content;
         }
 
         h2 {
@@ -118,22 +121,25 @@
 
     <div class="container">
         <div class="card" id="card1" >
-            <div class="card-inner" style="padding-bottom: 430px; padding-right: 20px; padding-left: 20px;
+            <div class="card-inner" style="padding-bottom: 480px; padding-right: 20px; padding-left: 20px;
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);">
                 <div class="front" >
                     <h2>Impacts of having your information leaked</h2>
-                    <button onclick="flipCard('card1','card')" >Show Stats</button>
+                    <br>
+                    <h3>How can my information being leaked affect me?</h3>
+                    <br>
+                    <button onclick="flipCard('card1','card')" >Learn more</button>
                 </div>
                 <div class="back">
                     <h2 >Impacts </h2>
-                    <div class="info" style="margin-right:30px">
+                    <div class="info" style="margin-right:30px;">
                         <h3>Reputation Damage</h3>
-                        <li>Individuals: Personal and professional reputations can be tarnished if sensitive information, such as private communications or compromising photos, is leaked.</li>
+                        <b><li>Individuals: Personal and professional reputations can be tarnished if sensitive information, such as private communications or compromising photos, is leaked.</li> <br>
                             <li>Organizations: Companies and institutions may face reputational damage that can take a long time to recover from, affecting customer loyalty and investor confidence.</li>
                             <br>
                             <h3>Psychological Impact</h3>
-                        <li>Individuals: The psychological impact of having private information exposed can be severe, leading to stress, anxiety, and emotional distress.</li>
-                            <li>Communities: Widespread leaks affecting a community may create a collective sense of vulnerability and anxiety.</li>
+                        <li>Individuals: The psychological impact of having private information exposed can be severe, leading to stress, anxiety, and emotional distress.</li> <br>
+                            <li>Communities: Widespread leaks affecting a community may create a collective sense of vulnerability and anxiety.</li></b>
                         </div>
                     <button class="back-button" onclick="flipCard('card1')">Go Back</button>
                 </div>
@@ -148,12 +154,15 @@
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);">
                 <div class="front">
                     <h2>Most commonly leaked Information</h2>
+                    <br>
+                    <h3>What kind of information can get leaked?</h3>
+                    <br>
                     <button onclick="flipCard('card2')">Show Impacts</button>
                 </div>
                 <div class="back" style="margin-right:30px">
                     <h2>Sensitive Information</h2>
                     <div class="info">
-                        <li>Health Information:
+                        <b><li>Health Information:
                         Medical records
                         Health insurance details
                         </li>
@@ -171,8 +180,8 @@
                     Credit card numbers
                     Bank account details
                     Financial transactions
-                    
                 </li>
+            </b>
             </div>
                     <button class="back-button" onclick="flipCard('card2')">Go Back</button>
                 </div>
@@ -186,13 +195,16 @@
             <div class="card-inner" style="padding-bottom: 270px; padding-right: 20px; padding-left: 20px;
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);">
                 <div class="front">
-                    <h2>Show Protection Tips</h2>
+                    <h2>Show Prevention Tips</h2>
+                    <br>
+                    <h3>How can I prevent myself from falling for this?</h3>
+                    <br>
                     <button onclick="flipCard('card3')">Show Tips</button>
                 </div>
                 <div class="back" >
                     <h2>Show Protection Tips</h2>
                     <div class="info" style="margin-right:30px">
-                        
+                        <b>
                         <li>
                             Enable Two-Factor Authentication (2FA):
                             Add an extra layer of security to your accounts by enabling 2FA, which typically involves receiving a code on your phone or email in addition to entering your password.
@@ -204,6 +216,7 @@
                             Review and adjust privacy settings to control who can access your profile and information
                             Do not share your information with people you do not know in real life.
                         </li>
+                    </b>
                     </div>
                     <button class="back-button" onclick="flipCard('card3')">Go Back</button>
                 </div>
