@@ -76,6 +76,7 @@
             border-bottom: 1px solid #333;
             padding-bottom: 10px;
             margin-bottom: 10px;
+            margin-right: 35px;
             color: #ff6347; 
         }
 
@@ -97,7 +98,7 @@
         .back-button {
             position: absolute;
             top: 13px;
-            right: 20px;
+            right: 40px;
             padding: 10px 12px;
             transition: background-color 0.3s;
             border-radius: 5px;
@@ -121,16 +122,21 @@
             <div class="card-inner" style="padding-bottom: 120px; padding-right: 20px; padding-left: 20px;
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);">
                 <div class="front" >
-                    <h2>Show Hacking Stats</h2>
+                    <h2>Impacts of having your information leaked</h2>
                     <button onclick="flipCard('card1','card')" >Show Stats</button>
                 </div>
                 <div class="back">
-                    <h2>Show Hacking Stats</h2>
+                    <h2 >Impacts </h2>
                     <div class="info">
-                        
+                        <h3>Reputation Damage</h3>
+                        <li>Individuals: Personal and professional reputations can be tarnished if sensitive information, such as private communications or compromising photos, is leaked.</li>
+                            <li>Organizations: Companies and institutions may face reputational damage that can take a long time to recover from, affecting customer loyalty and investor confidence.</li>
+                            <br>
+                            <h3>Psychological Impact</h3>
+                        <li>Individuals: The psychological impact of having private information exposed can be severe, leading to stress, anxiety, and emotional distress.</li>
+                            <li>Communities: Widespread leaks affecting a community may create a collective sense of vulnerability and anxiety.</li>
                         </div>
                     <button class="back-button" onclick="flipCard('card1')">Go Back</button>
-                        </UL>
                 </div>
             </div>
         </div>
@@ -142,12 +148,17 @@
             <div class="card-inner" style="padding-bottom: 120px; padding-right: 20px; padding-left: 20px;
             box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);">
                 <div class="front">
-                    <h2>Show Impacts of Being Hacked</h2>
+                    <h2>Most commonly leaked Information</h2>
                     <button onclick="flipCard('card2')">Show Impacts</button>
                 </div>
                 <div class="back">
-                    <h2>Show Impacts of Being Hacked</h2>
-                    <div class="info">Enter at your own risk! Discuss the dark impacts of being hacked.</div>
+                    <h2>Sensitive Information</h2>
+                    <div class="info"><li>Health Information:
+                        Medical records
+                        Health insurance details
+                        </li>
+                        <br>
+                        <li>Common PII(Personal Identifiable Information) include names, phone numbers, physical addresses, social security numbers, and email addresses.</li></ul></div>
                     <button class="back-button" onclick="flipCard('card2')">Go Back</button>
                 </div>
             </div>
@@ -165,7 +176,23 @@
                 </div>
                 <div class="back">
                     <h2>Show Protection Tips</h2>
-                    <div class="info">Guard yourself! Uncover protection tips to shield against the looming threats.</div>
+                    <div class="info">
+                        
+                        <li>
+                            Enable Two-Factor Authentication (2FA):
+Add an extra layer of security to your accounts by enabling 2FA, which typically involves receiving a code on your phone or email in addition to entering your password.
+
+                        </li>
+                        <br>
+                        <li>
+                            Be Mindful on Social Media:
+Limit the amount of personal information you share on social media platforms.
+Review and adjust privacy settings to control who can access your profile and information
+Do not share your information with people you do not know in real life
+
+                        </li>
+                        
+                    </div>
                     <button class="back-button" onclick="flipCard('card3')">Go Back</button>
                 </div>
             </div>
