@@ -14,24 +14,35 @@
     background-repeat: no-repeat;
     background-attachment: fixed; 
     color: red;
-    font-family: 'Chiller', cursive;
-    font-size: 80px;
+    font-family: courier, monospace;
+    font-size: 40px;
     text-align: center;
     }
+
+    #typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align:center;
+    border-right: 1px solid red;
+    background-color: black;    
+    padding: 10px;
+    }
+
 </style>
 </head>
 <body>
     <div>
         <br>
         <picture>
-            <img style="max-width: 250px;" src="tiktok scam_Heartcode.png" class="img-fluid">
+            <img style="max-width: 250px; margin-bottom: 20px;" src="tiktok scam_Heartcode.png" class="img-fluid">
         </picture>
         <br>
         <div id="typewriter-text"></div>
         <span id="cursor">&#9646;</span>
-        
+
         <script>
-        const words = ['Information will spread quickly', 'Even if you don\'t want it to.'];
+        const words = ['Information will spread quickly', 'EVEN IF YOU DON\'T WANT IT TO.'];
         const cursor = document.getElementById('cursor');
         const typewriterText = document.getElementById('typewriter-text');
         
