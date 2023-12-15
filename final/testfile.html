@@ -1,53 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Redirection</title>
-    <meta http-equiv="refresh" content="5; url=4. Information (dark).html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: black;
-            color: red;
-            font-family: 'Chiller', cursive;
-            font-size: 80px;
-            text-align: center;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        <br>
-        <picture><img style="max-width: 250px;" src="tiktok%20scam_Heartcode.png" class="img-fluid" alt="tiktok%20scam_Heartcode"></picture><br>
-    </div>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Collapsible Group Item #1
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
 
-    <div id="typing-container"></div>
-
-    <script>
-        const wordsToType = ['Information will spread quickly,', 'Even if you dont want it to']
-        const typingContainer = document.getElementById('typing-container');
-        let currentWordIndex = 0;
-        let currentCharIndex = 0;
-
-        function typeWords() {
-            const currentWord = wordsToType[currentWordIndex];
-            typingContainer.innerHTML = currentWord.substring(0, currentCharIndex);
-            currentCharIndex++;
-
-            if (currentCharIndex > currentWord.length) {
-                currentCharIndex = 0;
-                currentWordIndex = (currentWordIndex + 1) % wordsToType.length;
-                setTimeout(typeWords, 1000); // Pause between words (milliseconds)
-            } else {
-                setTimeout(typeWords, 100); // Typing speed (milliseconds)
-            }
-        }
-
-        // Start auto-typing words
-        typeWords();
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
