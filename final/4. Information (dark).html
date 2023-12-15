@@ -7,7 +7,6 @@
     <style>
         .content {
             max-width: 500px;
-            
         }
 
         body {
@@ -16,8 +15,7 @@
             color: #ddd;
             max-width: 500px;
             padding: 10px;
-            margin:0 auto;
-
+            margin: auto;
         }
 
         h1 {
@@ -34,20 +32,19 @@
         .container {
             width: 100%;
             margin-bottom: 20px;
+            height:fit-content
         }
 
         .card {
             position: relative;
             width: 100%;
-            height: auto;
-            perspective: 1000px;
             padding-top: 50px;
+            height:fit-content
     }   
 
         .card-inner {
             position: relative;
             width: 100%;
-            height: auto;
             transform-style: preserve-3d;
             transition: 0.5s;
         }
@@ -61,6 +58,7 @@
             width: 100%;
             height: 100%;
             backface-visibility: hidden;
+            height:fit-content
         }
 
         .front {
@@ -70,6 +68,7 @@
         .back {
             transform: rotateY(180deg);
             margin-left: -42px;
+            height:fit-content
         }
 
         h2 {
@@ -181,7 +180,6 @@
                         <li>
                             Enable Two-Factor Authentication (2FA):
 Add an extra layer of security to your accounts by enabling 2FA, which typically involves receiving a code on your phone or email in addition to entering your password.
-
                         </li>
                         <br>
                         <li>
